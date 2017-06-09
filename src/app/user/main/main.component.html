@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+      <!--这里是左侧动态加载的内容-->
+      <router-outlet></router-outlet>
+    </div>
+    <div class="col-sm-3">
+      <div class="social-channel-container">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">用户列表</h3>
+          </div>
+          <div class="list-group">
+            <a routerLink="userAdd" class="list-group-item">新增用户</a>
+            <a routerLink="userList" class="list-group-item">用户列表</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
