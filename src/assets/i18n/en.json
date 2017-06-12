@@ -4,6 +4,7 @@
         "user":"User",
       "echart":"amChart",
       "toastr":"toastr",
+      "grid": "grid",
       "ztree": "zTree"
     },
     "post":{

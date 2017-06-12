@@ -4,6 +4,7 @@
          "user":"用户",
         "echart":"图表",
       "toastr":"弹框",
+      "grid": "表格",
       "ztree": "zTree"
     },
     "post": {

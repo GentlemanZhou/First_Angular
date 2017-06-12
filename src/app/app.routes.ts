@@ -5,6 +5,7 @@ import { SitestatComponent } from './sitestat/sitestat.component';
 import { AmchartsDemoComponent } from './chart/amcharts-demo.component';
 import { ToastrComponent } from './toastr/toastr.component';
 import { ZtreeDemoComponent } from './zTree/ztree-demo.component';
+import { GridDemoComponent } from './grid-demo/grid-demo.component';
 
 export const appRoutes = [
   {
@@ -23,6 +24,10 @@ export const appRoutes = [
   }, {
     path: 'ztree',
     component: ZtreeDemoComponent
+  },
+  {
+    path: 'grid',
+    component: GridDemoComponent
   },
   {
     path: 'user',
