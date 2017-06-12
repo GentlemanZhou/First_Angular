@@ -8,15 +8,16 @@ import { GridComponent } from './grid/grid.component';
   styleUrls: ['./grid-demo.component.css']
 })
 export class GridDemoComponent implements OnInit {
-  public maxSize:number = 10;
-  public itemsPerPage:number=1;
-  public totalItems:number=100;
+
   //不要手动对这个属性进行赋值，它是和分页工具条自动绑定的
   public currentPage: number = 1;
   public numPages=0;
 
   public searchText:string;
   public data:any = {
+    "maxSize": 10,
+    "itemsPerPage": 1,
+    "totalItems": 100,
     "title": "序号",
     "columns": [{
       "title": "用户名",
@@ -61,14 +62,10 @@ export class GridDemoComponent implements OnInit {
       this.loadData(this.searchText, this.currentPage);
     });
   }
-
-  public loadTotalPages(){
-        this.totalItems = 100;
-        this.itemsPerPage = 2;
+  pageHandel(event){
+    console.log('父组件接受页面变更：'+ event);
   }
   public loadData(searchText:string,page:number){
   }
-  public pageChanged(event:any):void {
-    console.log('跳转：' + event.page);
-  }
+
 }

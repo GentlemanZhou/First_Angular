@@ -16,3 +16,4 @@
         </tr>
     </tbody>
 </table>
+<pagination [totalItems]="totalItems" [maxSize]="maxSize" [itemsPerPage]="itemsPerPage" firstText="{{'firstPage' | translate}}" lastText="{{'lastPage' | translate}}" previousText="{{'previousPage' | translate}}" nextText="{{'nextPage' | translate}}" [boundaryLinks]="true" [rotate]="false" (pageChanged)="pageChanged($event)" class="pagination-sm"></pagination>
