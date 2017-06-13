@@ -9,8 +9,8 @@ export class AmchartsDemoComponent implements OnInit {
   amChartId1 = 'amChartId1';
   amChartId2 = 'amChartId2';
   options = {
-    "type": "serial",
     "theme": "light",
+    "type": "serial",
     "dataProvider": [{
       "country": "USA",
       "year2004": 3.5,
@@ -57,14 +57,14 @@ export class AmchartsDemoComponent implements OnInit {
     "startDuration": 1,
     "graphs": [{
       "balloonText": "GDP grow in [[category]] (2004): <b>[[value]]</b>",
-      "fillAlphas": 0.9,
+      "fillAlphas": 0.6,
       "lineAlpha": 0.2,
       "title": "2004",
       "type": "column",
       "valueField": "year2004"
     }, {
       "balloonText": "GDP grow in [[category]] (2005): <b>[[value]]</b>",
-      "fillAlphas": 0.9,
+      "fillAlphas": 0.6,
       "lineAlpha": 0.2,
       "title": "2005",
       "type": "column",
@@ -72,7 +72,7 @@ export class AmchartsDemoComponent implements OnInit {
     }],
     "plotAreaFillAlphas": 0.1,
     "depth3D": 60,
-    "angle": 30,
+    "angle": 24,
     "categoryField": "country",
     "categoryAxis": {
       "gridPosition": "start"
@@ -83,6 +83,9 @@ export class AmchartsDemoComponent implements OnInit {
   };
 
   options2 = {
+    "export": {
+      "enabled": true
+    },
     "type": "serial",
     "theme": "light",
     "marginRight": 40,
@@ -153,9 +156,6 @@ export class AmchartsDemoComponent implements OnInit {
       "parseDates": true,
       "dashLength": 1,
       "minorGridEnabled": true
-    },
-    "export": {
-      "enabled": true
     },
     "dataProvider": [{
       "date": "2012-07-27",
@@ -723,7 +723,12 @@ export class AmchartsDemoComponent implements OnInit {
       "value": 81
     }]
 
-  }
+  };
+
+
+
+
+
   constructor() { }
 
   ngOnInit() {

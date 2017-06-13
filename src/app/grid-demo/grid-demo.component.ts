@@ -15,9 +15,9 @@ export class GridDemoComponent implements OnInit {
 
   public searchText:string;
   public data:any = {
-    "maxSize": 10,
-    "itemsPerPage": 1,
-    "totalItems": 100,
+    "maxSize": 10,       //页面最多显示几个数字页
+    "itemsPerPage": 10, //每页条数
+    "totalItems": 1000, //总条数
     "title": "序号",
     "columns": [{
       "title": "用户名",
@@ -63,7 +63,7 @@ export class GridDemoComponent implements OnInit {
     });
   }
   pageHandel(event){
-    console.log('父组件接受页面变更：'+ event);
+    console.log('父组件接受页面变更：'+ event.page + "每页条数："+ event.itemsPerPage);
   }
   public loadData(searchText:string,page:number){
   }

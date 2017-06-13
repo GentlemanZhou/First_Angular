@@ -2,9 +2,13 @@
     "app": {
         "welcome": "首页",
          "user":"用户",
-        "echart":"图表",
+      "amchart":"图表—amChart",
+      "highchart":"图表—highChart",
+      "echart":"图表—eChart",
       "toastr":"弹框",
       "grid": "表格",
+      "map": "谷歌地图",
+      "layer": "Layer",
       "ztree": "zTree"
     },
     "post": {

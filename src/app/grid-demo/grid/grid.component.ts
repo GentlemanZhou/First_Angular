@@ -22,7 +22,7 @@ export class GridComponent implements OnInit {
 
   public pageChanged(event:any):void {
     console.log('子组件页面变更：' + event.page);
-    this.currentPage.emit(event.page);
+    this.currentPage.emit(event);
 
   }
 }

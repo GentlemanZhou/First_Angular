@@ -6,6 +6,9 @@ import { AmchartsDemoComponent } from './chart/amcharts-demo.component';
 import { ToastrComponent } from './toastr/toastr.component';
 import { ZtreeDemoComponent } from './zTree/ztree-demo.component';
 import { GridDemoComponent } from './grid-demo/grid-demo.component';
+import { LayerDemoComponent } from './layer/layer-demo.component'
+import { HighchartsDemoComponent } from './highChart/highcharts-demo.component';
+import { EChartComponent } from './eChart/eChart.component';
 
 export const appRoutes = [
   {
@@ -26,8 +29,18 @@ export const appRoutes = [
     component: ZtreeDemoComponent
   },
   {
+    path: 'layer',
+    component: LayerDemoComponent
+  },
+  {
     path: 'grid',
     component: GridDemoComponent
+  }, {
+    path: 'highcharts',
+    component: HighchartsDemoComponent
+  }, {
+    path: 'echart',
+    component: EChartComponent
   },
   {
     path: 'user',

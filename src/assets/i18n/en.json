@@ -2,9 +2,13 @@
     "app":{
         "welcome":"Welcome",
         "user":"User",
-      "echart":"amChart",
+      "amchart":"amChart",
+      "highchart":"highChart",
+      "echart":"eChart",
       "toastr":"toastr",
       "grid": "grid",
+      "map": "map",
+      "layer": "Layer",
       "ztree": "zTree"
     },
     "post":{
