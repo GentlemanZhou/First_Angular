@@ -18,6 +18,7 @@ export class GridDemoComponent implements OnInit {
     "maxSize": 10,       //页面最多显示几个数字页
     "itemsPerPage": 10, //每页条数
     "totalItems": 1000, //总条数
+    "page": 1,
     "title": "序号",
     "columns": [{
       "title": "用户名",
@@ -52,6 +53,46 @@ export class GridDemoComponent implements OnInit {
       "email": "mr.zhouy@foxmail.com"
     }]
   };
+
+  public data1:any = {
+    "maxSize": 10,       //页面最多显示几个数字页
+    "itemsPerPage": 10, //每页条数
+    "totalItems": 100, //总条数
+    "page": 10,
+    "title": "序号",
+    "columns": [{
+      "title": "用户名",
+      "field": "username"
+    }, {
+      "title": "邮箱",
+      "field": "email"
+    }],
+    "rows": [{
+      "username": "****",
+      "email": "mr.zhouy@foxmail.com"
+    }, {
+      "username": "张先生7",
+      "email": "mr.zhouy@foxmail.com"
+    }, {
+      "username": "张先生6",
+      "email": "mr.zhouy@foxmail.com"
+    }, {
+      "username": "张先生5",
+      "email": "mr.zhouy@foxmail.com"
+    }, {
+      "username": "张先生4",
+      "email": "mr.zhouy@foxmail.com"
+    }, {
+      "username": "周先生3",
+      "email": "mr.zhouy@foxmail.com"
+    }, {
+      "username": "周先生2",
+      "email": "mr.zhouy@foxmail.com"
+    }, {
+      "username": "周先生1",
+      "email": "mr.zhouy@foxmail.com"
+    }]
+  };
   constructor(public router: Router,
               public activeRoute: ActivatedRoute) { }
 
@@ -64,6 +105,7 @@ export class GridDemoComponent implements OnInit {
   }
   pageHandel(event){
     console.log('父组件接受页面变更：'+ event.page + "每页条数："+ event.itemsPerPage);
+    this.data = this.data1;
   }
   public loadData(searchText:string,page:number){
   }

@@ -12,6 +12,7 @@ export class GridComponent implements OnInit {
     @Input() totalItems: number;
     @Input() itemsPerPage: number;
     @Input() maxSize: number;
+    @Input() nowpage: number;
   @Output()
   currentPage = new EventEmitter();
     constructor() { }
