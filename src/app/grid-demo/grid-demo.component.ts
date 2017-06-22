@@ -107,6 +107,11 @@ export class GridDemoComponent implements OnInit {
     console.log('父组件接受页面变更：'+ event.page + "每页条数："+ event.itemsPerPage);
     this.data = this.data1;
   }
+
+  clickTest() {
+    this.router.navigateByUrl('grid/5');
+  }
+
   public loadData(searchText:string,page:number){
   }
 

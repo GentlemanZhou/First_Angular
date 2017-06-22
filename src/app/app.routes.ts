@@ -1,6 +1,3 @@
-import { RouterModule } from '@angular/router';
-
-import { AppComponent } from './app.component';
 import { SitestatComponent } from './sitestat/sitestat.component';
 import { AmchartsDemoComponent } from './chart/amcharts-demo.component';
 import { ToastrComponent } from './toastr/toastr.component';
@@ -9,7 +6,7 @@ import { GridDemoComponent } from './grid-demo/grid-demo.component';
 import { LayerDemoComponent } from './layer/layer-demo.component'
 import { HighchartsDemoComponent } from './highChart/highcharts-demo.component';
 import { EChartComponent } from './eChart/eChart.component';
-
+import { CkeditorDemoComponent } from './ckeditor-demo/ckeditor-demo.component';
 export const appRoutes = [
   {
     path: '',
@@ -33,7 +30,7 @@ export const appRoutes = [
     component: LayerDemoComponent
   },
   {
-    path: 'grid',
+    path: 'grid/:page',
     component: GridDemoComponent
   }, {
     path: 'highcharts',
@@ -43,7 +40,15 @@ export const appRoutes = [
     component: EChartComponent
   },
   {
+    path: 'ckeditor',
+    component: CkeditorDemoComponent
+  },
+  {
     path: 'user',
     loadChildren: './user/user.module#UserModule'
+  },
+  {
+    path: 'map',
+    loadChildren: './map/map-demo.module#MapDemoModule'
   }
 ];

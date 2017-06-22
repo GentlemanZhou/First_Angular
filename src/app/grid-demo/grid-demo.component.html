@@ -1,3 +1,4 @@
 <div>
+    <button (click)="clickTest()" >测试传参</button>
     <grid [columns]="data.columns" [rows]="data.rows" [title]="data.title" [maxSize]="data.maxSize" [totalItems]="data.totalItems"  [nowpage]="data.page"  [itemsPerPage]="data.itemsPerPage" (currentPage)="pageHandel($event)"></grid>
 </div>

@@ -5,6 +5,8 @@
       "amchart":"amChart",
       "highchart":"highChart",
       "echart":"eChart",
+      "ckeditor":"ckeditor",
+      "googleMap": "Map",
       "toastr":"toastr",
       "grid": "grid",
       "map": "map",

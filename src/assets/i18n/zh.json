@@ -6,6 +6,8 @@
       "highchart":"图表—highChart",
       "echart":"图表—eChart",
       "toastr":"弹框",
+      "ckeditor":"编辑器",
+      "googleMap": "地图",
       "grid": "表格",
       "map": "谷歌地图",
       "layer": "Layer",

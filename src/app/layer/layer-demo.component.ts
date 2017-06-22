@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 declare var layer: any;
 @Component({
   selector: 'app-layer-demo',
   templateUrl: './layer-demo.component.html',
   styleUrls: ['./layer-demo.component.css']
 })
-export class LayerDemoComponent implements OnInit {
+export class LayerDemoComponent implements OnInit, OnDestroy {
 
-  constructor() { }
-
+  constructor() {
+    console.log('constructor');
+  }
+  ngOnDestroy() {
+    console.log('destroy');
+  }
   ngOnInit() {
+    console.log('init');
   }
   alert() {
     layer.alert('就是一个弹框而已.....');
