@@ -19,4 +19,5 @@
 	grid
 	Layer
 	eChart
+	百度地图
 ```
