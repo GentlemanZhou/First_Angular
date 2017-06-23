@@ -7,103 +7,84 @@ import { Ng2Highcharts } from 'ng2-highcharts';
   styleUrls: ['./highcharts-demo.component.css']
 })
 export class HighchartsDemoComponent implements OnInit {
-  chartOptions = {
+
+  options = {
     chart: {
-      type: 'line'
+      type: 'column'
     },
     title: {
-      text: 'Fruit Consumption'
+      text: 'Efficiency Optimization by Branch'
     },
     xAxis: {
-      categories: ['Apples', 'Bananas', 'Oranges']
+      categories: [
+        'Seattle HQ',
+        'San Francisco',
+        'Tokyo'
+      ]
     },
-    yAxis: {
+    yAxis: [{
+      min: 0,
       title: {
-        text: 'Fruit eaten'
+        text: 'Employees'
       }
-    },
-    series: [{
-      name: 'Jane',
-      data: [1, 0, 4]
     }, {
-      name: 'John',
-      data: [5, 7, 3]
-    }]
-  };
-
-  chartOptions2 = {
-    chart: {
-      renderTo: 'container',
-      type: 'column',
-      options3d: {
-        enabled: true,
-        alpha: 15,
-        beta: 15,
-        depth: 50,
-        viewDistance: 25
-      }
+      title: {
+        text: 'Profit (millions)'
+      },
+      opposite: true
+    }],
+    legend: {
+      shadow: false
     },
-    title: {
-      text: 'Chart rotation demo'
-    },
-    subtitle: {
-      text: 'Test options by dragging the sliders below'
+    tooltip: {
+      shared: true
     },
     plotOptions: {
       column: {
-        depth: 25
+        grouping: false,
+        shadow: false,
+        borderWidth: 0
       }
     },
     series: [{
-      data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+      name: 'Employees',
+      color: 'rgba(165,170,217,1)',
+      data: [150, 73, 20],
+      pointPadding: 0.3,
+      pointPlacement: -0.2
+    }, {
+      name: 'Employees Optimized',
+      color: 'rgba(126,86,134,.9)',
+      data: [140, 90, 40],
+      pointPadding: 0.4,
+      pointPlacement: -0.2
+    }, {
+      name: 'Profit',
+      color: 'rgba(248,161,63,1)',
+      data: [183.6, 178.8, 198.5],
+      tooltip: {
+        valuePrefix: '$',
+        valueSuffix: ' M'
+      },
+      pointPadding: 0.3,
+      pointPlacement: 0.2,
+      yAxis: 1
+    }, {
+      name: 'Profit Optimized',
+      color: 'rgba(186,60,61,.9)',
+      data: [203.6, 198.8, 208.5],
+      tooltip: {
+        valuePrefix: '$',
+        valueSuffix: ' M'
+      },
+      pointPadding: 0.4,
+      pointPlacement: 0.2,
+      yAxis: 1
     }]
   };
+  constructor() {
 
-  chartOptions3 = {
-    chart: {
-      type: 'pie',
-      options3d: {
-        enabled: true,
-        alpha: 45,
-        beta: 0
-      }
-    },
-    title: {
-      text: 'Browser market shares at a specific website, 2014'
-    },
-    tooltip: {
-      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-    },
-    plotOptions: {
-      pie: {
-        allowPointSelect: true,
-        cursor: 'pointer',
-        depth: 35,
-        dataLabels: {
-          enabled: true,
-          format: '{point.name}'
-        }
-      }
-    },
-    series: [{
-      type: 'pie',
-      name: 'Browser share',
-      data: [
-        ['Firefox', 45.0],
-        ['IE', 26.8],
-        {
-          name: 'Chrome',
-          y: 12.8,
-          sliced: true,
-          selected: true
-        },
-        ['Safari', 8.5],
-        ['Opera', 6.2],
-        ['Others', 0.7]
-      ]
-    }]
-  };
-  constructor() { }
+  }
 
   ngOnInit() {
   }

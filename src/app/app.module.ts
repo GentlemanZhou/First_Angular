@@ -24,7 +24,6 @@ import { ZtreeDemoComponent } from './zTree/ztree-demo.component';
 import { GridDemoComponent } from './grid-demo/grid-demo.component';
 import { GridComponent } from './grid-demo/grid/grid.component';
 import { LayerDemoComponent } from './layer/layer-demo.component';
-import { HighchartsDemoComponent } from './highChart/highcharts-demo.component';
 import { CkeditorDemoComponent } from './ckeditor-demo/ckeditor-demo.component';
 
 //加载国际化静态文件
@@ -46,7 +45,6 @@ export function createTranslateLoader(http: Http) {
     LayerDemoComponent,
     GridComponent,
     GridDemoComponent,
-    HighchartsDemoComponent,
     ToastrComponent
   ],
   //导入其他module

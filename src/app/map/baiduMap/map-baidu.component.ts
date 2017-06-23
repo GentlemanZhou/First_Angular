@@ -11,8 +11,15 @@ export class MapBaiduComponent implements OnInit {
 
   opts: any;
   offlineOpts: OfflineOptions;
-
+  markers: any;
   ngOnInit() {
+    this.markers =  [{
+      longitude: 116.4177150000,
+      latitude: 40.0612540000,
+      title: '华泰汽车集团',
+      content: '朝阳区立水桥',
+      autoDisplayInfoWindow: false
+    }];
     // 配置地图, 参考百度地图api
     this.opts = {
       // 地图中心坐标
@@ -22,13 +29,7 @@ export class MapBaiduComponent implements OnInit {
       },
       zoom: 17,
       // 地图上的坐标
-      markers: [{
-        longitude: 116.4177150000,
-        latitude: 40.0612540000,
-        title: '华泰汽车集团',
-        content: '朝阳区立水桥',
-        autoDisplayInfoWindow: true
-      }],
+      markers: this.markers,
       geolocationCtrl: {
         anchor: ControlAnchor.BMAP_ANCHOR_BOTTOM_RIGHT
       },
@@ -58,6 +59,4 @@ export class MapBaiduComponent implements OnInit {
   clickMarker(marker: any) {
     console.log(marker);
   }
-
-
 }

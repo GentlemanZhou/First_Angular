@@ -7,6 +7,7 @@ import { BaiduMapModule } from 'angular2-baidu-map';
 import { mapRoutes } from './map-demo.routes';
 import { MapDemoComponent } from './map-demo.component';
 import { MapBaiduComponent } from './baiduMap/map-baidu.component';
+import { MapAMapComponent } from './aMap/map-amap.component';
 
 @NgModule({
     imports: [
@@ -19,7 +20,8 @@ import { MapBaiduComponent } from './baiduMap/map-baidu.component';
     exports: [],
     declarations: [
       MapDemoComponent,
-      MapBaiduComponent
+      MapBaiduComponent,
+      MapAMapComponent
     ],
     providers: [
      ],

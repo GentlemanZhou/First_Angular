@@ -4,7 +4,6 @@ import { ToastrComponent } from './toastr/toastr.component';
 import { ZtreeDemoComponent } from './zTree/ztree-demo.component';
 import { GridDemoComponent } from './grid-demo/grid-demo.component';
 import { LayerDemoComponent } from './layer/layer-demo.component'
-import { HighchartsDemoComponent } from './highChart/highcharts-demo.component';
 import { EChartComponent } from './eChart/eChart.component';
 import { CkeditorDemoComponent } from './ckeditor-demo/ckeditor-demo.component';
 export const appRoutes = [
@@ -34,7 +33,7 @@ export const appRoutes = [
     component: GridDemoComponent
   }, {
     path: 'highcharts',
-    component: HighchartsDemoComponent
+    loadChildren: './highChart/highcharts-demo.module#HighchartsDemoModule'
   }, {
     path: 'echart',
     component: EChartComponent
