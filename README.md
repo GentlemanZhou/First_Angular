@@ -19,5 +19,7 @@
 	grid
 	Layer
 	eChart
+	highChart
+	ckeditor
 	百度地图
 ```
