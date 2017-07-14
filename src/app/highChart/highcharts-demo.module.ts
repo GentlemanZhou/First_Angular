@@ -5,13 +5,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { ChartModule } from 'angular2-highcharts';
 import {highchartsRoutes} from './highcharts-demo.routes';
-declare var require: any;
+
+//declare var require: any;
 
 import { HighchartsDemoComponent } from './highcharts-demo.component';
 @NgModule({
     imports: [
-      ChartModule.forRoot(require('highcharts'),
-              require('highcharts/modules/exporting')),
+     /* ChartModule.forRoot(require('highcharts'),
+              require('highcharts/modules/exporting')),*/
       RouterModule.forChild(highchartsRoutes)
     ],
     exports: [],

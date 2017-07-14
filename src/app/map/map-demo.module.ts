@@ -8,6 +8,8 @@ import { mapRoutes } from './map-demo.routes';
 import { MapDemoComponent } from './map-demo.component';
 import { MapBaiduComponent } from './baiduMap/map-baidu.component';
 import { MapAMapComponent } from './aMap/map-amap.component';
+import { MapBaidu2Component } from './baiduMap2/map-baidu.component';
+import {MapGoogleComponent} from './googleMap/map-google.component';
 
 @NgModule({
     imports: [
@@ -21,6 +23,8 @@ import { MapAMapComponent } from './aMap/map-amap.component';
     declarations: [
       MapDemoComponent,
       MapBaiduComponent,
+      MapBaidu2Component,
+      MapGoogleComponent,
       MapAMapComponent
     ],
     providers: [

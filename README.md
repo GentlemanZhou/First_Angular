@@ -21,5 +21,7 @@
 	eChart
 	highChart
 	ckeditor
-	百度地图
+	高德地图
+	百度地图        //两种方式
+	谷歌地图
 ```
